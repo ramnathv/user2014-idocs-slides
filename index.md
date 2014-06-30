@@ -11,7 +11,7 @@ biglogo     : "slidify_logo_big.png"
 
 # Interactive Documents with R
 
-<a href="http://prose.io/#{{site.github.user}}/{{site.github.repo}}/edit/gh-pages/index.Rmd" class="button icon edit">Edit Page</a>
+<a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/index.Rmd" class="button icon edit">Edit Page</a>
 
 
 
