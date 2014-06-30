@@ -1,0 +1,21 @@
+---
+layout: slide
+---
+
+{{{ slide.content }}}
+
+{{# slide.blocks }}
+<div id='{{id}}' class="draggable ui-widget-content {{#build}}build{{/build}}">
+  <div class='callout {{ class }}'>
+    {{{ html }}}
+  </div>
+</div>
+{{/ slide.blocks }}
+
+{{# slide.highlight }}
+<script>
+$(function(){
+  $("code").highlight("{{{ . }}}");
+});
+</script>
+{{/ slide.highlight }}

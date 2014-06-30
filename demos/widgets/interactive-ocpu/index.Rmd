@@ -1,0 +1,84 @@
+---
+title       : Interactive Documents
+subtitle    : Slidify + OpenCPU
+author      : Ramnath Vaidyanathan
+job         : R Hacker
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : solarized_light      # 
+widgets     : [bootstrap, quiz, interactive]          
+mode        : selfcontained # {standalone, draft}
+ext_widgets : {rCharts: [libraries/nvd3]}
+assets: {jshead: "angular.min.js"}
+--- &radio
+
+## Interactive Quiz
+
+What is 1 + 4?
+
+1. 1
+2. _5_
+3. 3
+4. 4
+
+*** .hint
+
+This is a hint
+
+*** .explanation
+
+This is an explanation
+
+---
+
+## Interactive Chart
+
+```{r echo = F, results = 'asis', message = F}
+require(rCharts)
+haireye <- as.data.frame(HairEyeColor)
+n1 <- nPlot(Freq ~ Hair, group = 'Eye', type = 'multiBarChart',
+    data = subset(haireye, Sex == "Male")
+)
+n1$show('inline')
+```
+
+--- &interactive
+
+## Interactive Console
+
+```{r opts.label = 'interactive', results = 'asis', message = F}
+require(googleVis)
+M1 <- gvisMotionChart(Fruits, idvar = 'Fruit', timevar = 'Year')
+print(M1, tag = 'chart')
+```
+
+---
+
+## Interactive App
+
+<div ng-app>
+  <div ng-controller='controller1'>
+    <input ng-model="n" type="number"></input>
+    <select ng-model="col" ng-options="col for col in cols"></select>
+    <select ng-model="dist" ng-options="dist for dist in dists"></select>
+    <iframe id="outcode" height=300></iframe>
+  </div>
+  <script>
+    function controller1($scope){
+      $scope.n = 100
+      $scope.dists = ["rnorm", "runif"]
+      $scope.dist = $scope.dists[1]
+      $scope.cols = ["steelblue", "darkred"]
+      $scope.col = $scope.cols[0]     
+      $scope.code = function(col, dist, n){
+        return "x=" + dist + "(" + n + ");hist(x, col='" + col + "')"
+      }
+      $scope.$watchCollection("[col, dist, n]", function(){
+        runCode2($scope.code($scope.col, $scope.dist, $scope.n), "outcode")
+      })
+    } 
+  </script>
+</div>
+
+
+<!-- rmarkdown v1 -->

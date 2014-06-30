@@ -1,0 +1,32 @@
+---
+title  : Carousel Layout
+widgets: [bootstrap]
+url    : {lib: ../libraries}
+mode   : selfcontained
+--- {tpl: carousel, class: span12}
+
+## Carousel
+
+
+*** {class: active, img: "http://placehold.it/950x500"}
+
+Image 1
+
+*** {img: "http://placehold.it/950x500"}
+
+Image 2
+
+--- {tpl: carousel, class: span12}
+
+## Programmatic Carousel
+
+```{r results = 'asis', comment = NA, echo = F}
+x <- c('http://placekitten.com/950/500', "http://placehold.it/950x500")
+cls <- c('active', "")
+names <- c('Image1', 'Image2')
+cat(paste(sprintf("*** {class: %s, img: '%s'}\n%s\n", cls, x, names), collapse = "\n"))
+```
+
+
+
+

@@ -1,0 +1,7 @@
+# TWEAK THESE SETTINGS, ESPECIALLY USER AND REPO
+title: My Lectures
+github: {user: slidify, repo: workshops}
+biglogo: "slidify_logo_big.png"
+logo: "slidify_logo_small.png"
+comment:
+  description: "%20GENERATED_URL_TO_DEMO%0a%0a%20%20%20%20Long%20description%20of%20the%20issue:%0a%20%20%20%20Browser%20version(s):%0a%20%20%20%20Steps%20to%20reproduce:%0a%20%20%20%20Screenshot%20showing%20the%20issue:%0a%0a%20%20%20%20%60%60%60%0a%20%20%20%20Enter%20code%20samples%20here%20if%20necessary%0a%20%20%20%20%60%60%60"

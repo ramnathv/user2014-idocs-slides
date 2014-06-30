@@ -1,0 +1,26 @@
+---
+title: Slidify
+author: Ramnath Vaidyanathan
+framework: io2012
+---
+## Get Started
+
+Slidify is easy to use, only three rules!
+
+1. Write content using R Markdown
+3. Add properties using YAML
+4. Separate slides using `---`
+
+---
+## Example Slide
+
+Let us create a __scatterplot__
+
+
+```r
+require(ggplot2)
+qplot(wt, mpg, data = mtcars)
+```
+
+![plot of chunk myplot](assets/fig/myplot.png) 
+

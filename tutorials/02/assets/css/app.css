@@ -1,0 +1,167 @@
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text);
+
+#impress pre, slide.wrappre pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+ line-height: 26px;
+}
+
+q {
+  font-family: "Crimson Text", "Georgia", serif;
+}
+
+slide.dark q {
+  color: whitesmoke;
+}
+
+slide.centrepre pre{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+slide.centrepre code {
+font-size: 22px;
+}
+
+span.highlight {
+  color: #002b36; 
+  font-weight: bolder;
+}
+code.no-highlight {
+  color: #e6e6e6;
+}
+
+#slide1a .draggable{
+  left: -3px;
+  top: -216px;
+}
+
+#slide1b .draggable{
+  left: -3px;
+  top: -162px;
+}
+
+
+#slide1c .draggable{
+  left: -3px;
+  top: -105px;
+}
+
+#payload pre{
+  font-size: 20px;
+  line-height: 22px;
+  width: 80%;
+}
+
+#layout pre, #rendered pre{
+  width: 80%;
+}
+
+slide.carouselslide pre{
+  width: 75%
+}
+
+slide.carouselslide .draggable {
+  left: -35px;
+}
+
+#carouselslideA .draggable{
+  top: -432px;
+}
+
+#carouselslideB .draggable{
+  top: -376px;
+}
+
+#carouselslideC .draggable{
+  top: -202px;
+}
+
+slide.smaller pre{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
+/* Callouts */
+
+.callout p{
+  color: yellow;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bolder;
+}
+div.callout {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Helvetica Neue"
+}
+div.callout {
+  height: 60px;
+  width: 100px;
+  float: left;
+}
+
+div.callout {
+	background-color: #444;
+	background-image: -moz-linear-gradient(top, #444, #444);
+	position: relative;
+	color: #ccc;
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 20px #999;
+	margin: 25px;
+	min-height: 50px;
+	border: 1px solid #333;
+	text-shadow: 0 0 1px #000;
+	
+	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;*/
+}
+
+.callout::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+
+.callout.top::before {
+	left: 45%;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}
+
+.callout.bottom::before {
+	left: 45%;
+	top: -20px;
+	border-bottom: 10px solid #444;
+}
+
+.callout.left::before {
+	right: -20px;
+	top: 40%;
+	border-left: 10px solid #444;
+}
+
+.callout.right::before {
+	left: -20px;
+	top: 40%;
+	border-right: 10px solid #444;
+}
+
+.callout.top-left::before {
+	left: 7px;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}
+
+.callout.top-right::before {
+	right: 7px;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}

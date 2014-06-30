@@ -1,0 +1,240 @@
+---
+title       : How Slidify Works?
+subtitle    : Interactive Docs, UseR 2014
+author      : Ramnath Vaidyanathan
+hitheme     : solarized_light 
+mode        : selfcontained # {standalone, draft}
+assets:
+  js:
+    - "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"
+    - "http://bartaz.github.io/sandbox.js/jquery.highlight.js"
+  css: "http://fonts.googleapis.com/css?family=Crimson+Text"
+---
+
+```{r setup, cache = F, message = F, eval = T, echo = F}
+knitr::knit_hooks$set(document = function(doc){
+  gsub("``x", "```", doc)
+})
+```
+
+--- .segue .dark .nobackground
+
+## Page (Rmd)
+
+--- .centrepre
+
+```{r page0, results = 'asis', comment = NA, echo = F}
+writeLines(paste0("\t", readLines('assets/includes/page.txt')))
+```
+
+--- &callout #step3a .centrepre
+
+
+```{r page, results = 'asis', comment = NA, echo = F}
+writeLines(paste0("\t", readLines('assets/includes/page.txt')))
+```
+
+*** #draggable5 .left
+
+Properties
+
+--- &callout #step3b .centrepre
+
+
+```{r ref.label='page', results = 'asis', comment = NA, echo = F}
+```
+
+*** #draggable6 .left
+
+Section
+
+--- &callout #step3c .centrepre
+
+
+```{r ref.label='page', results = 'asis', comment = NA, echo = F}
+```
+
+*** #draggable7 .left
+
+Separator
+
+--- &callout #step3d .centrepre
+
+
+```{r ref.label='page', results = 'asis', comment = NA, echo = F}
+```
+
+*** #draggable8 .right
+
+Markdown
+
+
+--- &callout #step3e .centrepre
+
+
+```{r ref.label='page', results = 'asis', comment = NA, echo = F}
+```
+
+*** #draggable9 .right
+
+Code Chunk
+
+---
+
+<iframe src='../01/assets/img/knit.svg' width=800px height=250px>
+</iframe> 
+
+--- .centrepre #page1
+
+```{r page1, results = 'asis', comment = NA, echo = F}
+writeLines(paste0("\t", readLines('assets/includes/page1-out.txt')))
+```
+
+---
+
+<iframe src='../01/assets/img/split_apply_combine.svg' width=800px height=250px>
+</iframe> 
+
+
+---
+
+<iframe src='../01/assets/img/split.svg' width=800px height=250px>
+</iframe> 
+
+
+--- .segue .dark .nobackground
+
+## Slide
+
+--- .centrepre
+
+
+```{r typical1, results = 'asis', comment = NA, echo = F}
+writeLines(c("\n\n", 
+  paste0("\t", readLines('assets/includes/typical.txt')), 
+"\n\n"))
+```
+
+
+--- {id: step1a, tpl: callout, class: 'centrepre'}
+
+```no-highlight
+
+```{r typical, results = 'asis', comment = NA, echo = F}
+writeLines(paste0(" ", readLines('assets/includes/typical.txt')))
+```
+
+```
+
+*** .right
+
+Properties
+
+--- .centrepre #step1b &callout
+
+```no-highlight
+
+```{r ref.label = 'typical', results = 'asis', comment = NA, echo = F}
+```
+
+```
+
+*** .left
+
+Title
+
+--- .centrepre #step1c &callout
+
+```no-highlight
+
+```{r ref.label = 'typical', results = 'asis', comment = NA, echo = F}
+```
+
+```
+
+*** .left
+
+Content
+
+--- .centrepre #step1d &callout
+
+```no-highlight
+
+```{r ref.label = 'typical', results = 'asis', comment = NA, echo = F}
+```
+
+```
+
+*** .left
+
+Blocks
+
+---
+
+<iframe src='../01/assets/img/apply.svg' width=800px height=250px>
+</iframe> 
+
+
+---
+
+<iframe src='../01/assets/img/combine.svg' width=800px height=250px>
+</iframe> 
+
+
+--- .segue .dark .nobackground
+
+## Backup Slides
+
+--- .dark .nobackground .segue
+
+## Code Chunks
+
+--- .centrepre &callout #chunk1
+
+    ``x{r example, fig.width = 6, comment = NA}
+    x <- 1+1
+    rnorm(5)
+    ```
+    
+*** .left #markup build:true
+
+Markup
+
+*** .top #label build:true
+
+Label
+
+
+*** .top #options build:true
+
+Options
+
+*** .bottom #code1 build:true
+
+Code
+
+--- .centrepre &callout #chunk2
+
+
+
+```{r example1, results = 'asis', comment = NA, echo = F}
+writeLines(paste0("\t", readLines('assets/includes/example.R')))
+```
+
+
+    
+*** .left #markup
+
+Markup
+
+--- .dark .quote .nobackground
+
+<q>The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.</q>
+
+<!-- rmarkdown v1 -->
+
+
+
+
+
+

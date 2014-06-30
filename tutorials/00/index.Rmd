@@ -1,0 +1,242 @@
+---
+title       : Interactive Documents
+subtitle    : UseR 2014, Los Angeles
+author      : Ramnath Vaidyanathan
+hitheme     : solarized_light
+license     : by-nc-sa
+url         : {lib: "../../libraries"}
+editlink    : "tutorials/00"
+assets:
+  js:
+    - "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"
+    - "http://bartaz.github.io/sandbox.js/jquery.highlight.js"
+--- .dark .segue
+
+## What is an Interactive Document?
+
+---
+
+<img src='assets/img/nyt_512paths.png' width=800px class=center>
+
+
+---
+
+<img src='assets/img/khan_academy.png' width=1000px class=center>
+
+---
+
+<img src='assets/img/code_academy.png' width=1000px class=center>
+
+--- .segue .dark .nobackground
+
+## Dynamic Documents
+
+---
+
+<iframe src='assets/img/dyndocs1.svg' width=800px height=250px>
+</iframe>
+
+---
+
+<iframe src='assets/img/dyndocs2.svg' width=800px height=250px>
+</iframe>
+
+---
+
+<iframe src='assets/img/dyndocs3.svg' width=800px height=250px>
+</iframe>
+
+---
+
+<iframe src='assets/img/dyndocs4.svg' width=800px height=250px>
+</iframe>
+
+---
+
+<iframe src='assets/img/dyndocs5.svg' width=800px height=250px>
+</iframe>
+
+---
+
+<iframe src='assets/img/dyndocs6.svg' width=800px height=250px>
+</iframe>
+
+--- .segue .dark
+
+## Creating Documents for the Web
+
+--- .dark .nobackground .quote
+
+<q> Slidify helps create, customize and share, elegant, dynamic and interactive HTML5 documents using R Markdown.</q>
+
+```{r setup, echo = F, message = F, cache = F}
+knitr::opts_chunk$set(tidy = F, message = F)
+include <- function(file){
+  writeLines(paste('    ', readLines(file)))
+}
+```
+
+--- .segue .dark
+
+## Interactive Visualizations
+
+--- .fill .nobackground
+
+![img](assets/img/rCharts.png)
+
+--- .quote
+
+<q>rCharts is an R package to create, customize and share interactive visualizations, using a lattice-like formula interface.</q>
+
+--- .bigger
+
+## Interactive Chart
+
+```{r ichart, results = 'hide', tidy = F, message = F}
+require(rCharts)
+haireye = as.data.frame(HairEyeColor)
+n1 <- nPlot(Freq ~ Hair, 
+  group = 'Eye',
+  data = subset(haireye, Sex == 'Male'),
+  type = 'multiBarChart'
+)
+n1$print('chart1')
+```
+
+---
+
+## Interactive Chart
+
+```{r ref.label = 'ichart', results = 'asis', echo = F}
+
+```
+
+--- .segue .dark .nobackground
+
+## Interactive WebApp
+
+--- &tabs
+
+## Get Data
+
+
+*** 
+
+## Code
+
+```{r results = 'asis'}
+require(PerformanceAnalytics)
+data(managers)
+managers <- na.omit(managers)
+data_ = data.frame(
+  date = format(index(managers), "%Y-%m-%d"),
+  coredata(cumprod(managers + 1)*100)
+)
+```
+
+*** .active
+
+## Data
+
+```{r results = 'asis', echo = F}
+require(xtable)
+options(xtable.type = 'html', xtable.include.rownames = F)
+xtable(head(data_, 10))
+```
+
+
+--- .bigger &tabs
+
+## Process Data
+
+*** 
+
+## Code
+
+```{r}
+require(reshape2)
+# melt data frame into long form
+data_m <- melt(data_, id = "date", 
+  variable.name = 'manager', 
+  value.name = 'val'
+)
+```
+
+*** .active
+
+## Data
+
+```{r results = 'asis', echo = F}
+xtable(head(data_m, 10))
+```
+
+--- .bigger
+
+## Visualize Data
+
+```{r nythome2, results = 'hide'}
+require(rCharts)
+
+# initialize chart and set path to chart library
+p2 <- rCharts$new()
+p2$setLib('libraries/widgets/nyt_home')
+
+# pass description, plot data and groups variable
+p2$set(
+  description = "This data comes from the managers dataset 
+  included in the R package PerformanceAnalytics.",
+  data = data_m,
+  groups = "manager",
+  height = 0,
+  width = 0
+)
+p2
+```
+
+---
+
+```{r ref.label = 'nythome2', echo = F, results = 'asis'}
+
+```
+
+<div class="source">
+Source: <a href="http://www.nytimes.com/interactive/2011/05/31/business/economy/case-shiller-index.html">NY Times</a>
+</div>
+
+---
+
+<iframe src="http://glimmer.rstudio.com/ramnathv/BikeShare/" width=1000px height=600px></iframe>
+
+--- .segue .dark .nobackground
+
+## Interactive Learning Environment
+
+---
+
+## Conclusions
+
+1. Interactive Documents are the Future!
+2. Key is to separate content from presentation and behavior.
+3. Think in terms of modules.
+4. Abstract away common functionality.
+
+---
+
+## Credits
+
+1. Yihui Xie for knitr.
+2. Joe Cheng for Shiny.
+3. Jeffrey Horner and RStudio for R Markdown.
+4. Hadley Wickham for several R packages.
+5. Kenton Russel and Thomas Reinholdsson for coauthoring rCharts.
+6. Authors of all the JS Libraries I have liberally used.
+7. Authors of several presentation libraries in Ruby/Python/JS.
+
+<!-- rmarkdown v1 -->
+
+
+
+
+
+
+

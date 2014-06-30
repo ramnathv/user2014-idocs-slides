@@ -1,0 +1,12 @@
+--- {tpl: carousel, class: span12}
+    
+## Carousel
+    
+    
+*** {class: active, img: "../01/assets/img/split.svg"}
+    
+Image 1
+    
+*** {img: "../01/assets/img/apply.svg"}
+    
+Image 2

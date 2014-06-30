@@ -1,0 +1,17 @@
+--- {class: [class1, class2], id: id}
+
+## Title
+
+Some content
+
+*** {name: block1, class: class3}
+
+## Block1 Title
+
+Some contents of block 1
+
+*** {bg: green}
+
+## Block2 Title
+
+Some contents of block 2

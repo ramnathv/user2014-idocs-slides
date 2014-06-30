@@ -1,0 +1,151 @@
+#page1 pre{
+  line-height: 24px;
+}
+slide.wrap pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+q {
+  font-family: "Crimson Text", "Georgia", serif;
+}
+.dark q {
+  color: whitesmoke;
+}
+#markup {
+  left: 2px;
+  top: -183px;
+}
+#label {
+  left: 181px;
+  top: -367px;
+}
+#options {
+  left:426px;
+  top: -489px;
+}
+#code1 {
+  left: 182px;
+  top: -391px;
+}
+#chunk1 pre {
+  margin-top:200px;
+}
+#chunk2 pre {
+  margin-top:200px;
+}
+#chunk1 .draggable, #chunk2 .draggable {
+  width: 100px;
+}
+slide.bigger article code{
+  font-size: 24px;
+  line-height: 32px;
+}
+slide.centrepre pre{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+slide.centrepre code {
+font-size: 22px;
+}
+span.highlight {
+  color: #002b36; 
+  font-weight: bolder;
+}
+code.no-highlight {
+  color: #e6e6e6;
+}
+slide.imgonly img {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+slides > slide.backdrop {
+  background: white;
+}
+
+.highlight-code slide.current pre > span.highlight {
+  opacity: 1;
+}
+/* Callouts */
+
+.callout p{
+  color: yellow;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bolder;
+}
+div.callout {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "Helvetica Neue"
+}
+div.callout {
+  height: 60px;
+  width: 200px;
+	float: left;
+}
+
+div.callout {
+	background-color: #444;
+	background-image: -moz-linear-gradient(top, #444, #444);
+	position: relative;
+	color: #ccc;
+	padding: 10px;
+	border-radius: 3px;
+	box-shadow: 0px 0px 20px #999;
+	margin: 25px;
+	min-height: 50px;
+	border: 1px solid #333;
+	text-shadow: 0 0 1px #000;
+	
+	/*box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;*/
+}
+
+.callout::before {
+	content: "";
+	width: 0px;
+	height: 0px;
+	border: 0.8em solid transparent;
+	position: absolute;
+}
+
+.callout.top::before {
+	left: 45%;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}
+
+.callout.bottom::before {
+	left: 45%;
+	top: -20px;
+	border-bottom: 10px solid #444;
+}
+
+.callout.left::before {
+	right: -20px;
+	top: 40%;
+	border-left: 10px solid #444;
+}
+
+.callout.right::before {
+	left: -20px;
+	top: 40%;
+	border-right: 10px solid #444;
+}
+
+.callout.top-left::before {
+	left: 7px;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}
+
+.callout.top-right::before {
+	right: 7px;
+	bottom: -20px;
+	border-top: 10px solid #444;
+}

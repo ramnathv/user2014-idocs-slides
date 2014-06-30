@@ -1,0 +1,9 @@
+nyt_home:
+  css: [css/base.css]
+  jshead: [js/d3.v3.js,js/queue.js]
+  cdn:
+    jshead: 
+      - "http://d3js.org/d3.v3.min.js"
+    css:
+      - "http://timelyportfolio.github.io/rCharts_nyt_home_price/libraries/widgets/nyt_home/css/base.css"
+

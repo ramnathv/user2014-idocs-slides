@@ -1,0 +1,100 @@
+.draggable {
+  position: relative;
+  left: 646px;
+  top: -391px;
+  width: 250px;
+}
+
+/*
+.draggable p{
+ font-family: 'Architects Daughter'
+ line-height: 1em;
+ font-color: whitesmoke;
+}
+*/
+
+.ui-widget-content {
+  border: 0px;
+}
+
+#draggable1 {
+  left: -3px;
+  top: -339px;
+  width: 150px;
+}
+#draggable2 {
+ left: 66px;
+ top: 10px;
+}
+#step1a .draggable {
+  left: 650px;
+  top: -590px;
+  width: 100px;
+}
+
+#step1b .draggable {
+  left: 0px;
+  top: -534px;
+  width: 100px;
+}
+
+#step1c .draggable {
+  left: 0px;
+  top: -481px;
+  width: 100px;
+}
+#step1d .draggable {
+  left: 0px;
+  top: -425px;
+  width: 100px;
+}
+
+#draggable4 {
+ left: 455px;
+ top: -633px;
+}
+
+#draggable5 {
+  left: 0px;
+  top: -616px;
+  width: 100px;
+}
+
+#draggable6 {
+  left: 0px;
+  top: -518px;
+  width: 100px;
+}
+
+#draggable7 {
+  left: 0px;
+  top: -320px;
+  width: 100px;
+}
+
+#draggable8 {
+  left: 540px;
+  top: -240px;
+  width: 100px;
+}
+
+#draggable9 {
+  left: 540px;
+  top: -140px;
+  width: 100px;
+}
+
+
+div.callout {
+  width: 100%;
+  height: 40px;
+}
+
+/* Modify the Color of the Box */
+#draggable4 p {
+  border: 5px solid darkslategray;
+}
+
+#draggable4 p:before{
+  border-color: darkslategray transparent;
+}

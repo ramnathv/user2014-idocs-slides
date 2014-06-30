@@ -1,0 +1,332 @@
+---
+title       : Slidify
+subtitle    : Interactive Docs, UseR2014
+hitheme     : solarized_light
+license     : by-nc-sa
+url         : {lib: "../../libraries"}
+editlink    : "tutorials/01"
+--- .dark .nobackground .quote
+
+<q> Slidify helps create, customize and share, elegant, dynamic and interactive HTML5 documents using R Markdown.</q>
+
+```{r setup, echo = F, message = F, cache = F}
+knitr::opts_chunk$set(tidy = F, message = F)
+include <- function(file){
+  writeLines(paste('    ', readLines(file)))
+}
+```
+
+---
+
+## Install Slidify
+
+Slidify is not on CRAN and needs to be installed from `github` using the `devtools` package. I would recommend installing the `dev` version of the package.
+
+```r
+# install.packages('devtools')
+pkgs <- c("slidify", "slidifyLibraries", "rCharts")
+install_github(pkgs, 'ramnathv', ref = 'dev')
+```
+
+NOTE: While the installation process from `github` is relatively painless for Mac/Linux/Ubuntu users, it can make Windows users jump through hoops. For those of you on Windows that hit a bottleneck, here is an [excellent blog post](http://thiagosilva.wordpress.com/2013/02/17/installing-slidify-on-a-windows-machine/) that takes you through an alternate installation process that has been reported to work well.
+
+--- .nobackground .quote
+
+<q> Slidify helps __create__, customize and share, elegant, dynamic and interactive HTML5 documents using R Markdown.</q>
+
+--- 
+
+## Quick Start
+
+```r
+author("myDeck")
+slidify("index.Rmd")
+browseURL("index.html")
+publish("myDeck", "ramnathv")
+```
+
+--- .bigger
+
+## Create
+
+The easiest way to get started is by using the `author` function to set up a scaffold for your slide deck. This will do the following
+
+> - create a directory for the deck.
+> - copy necessary scaffolding for the deck.
+> - if you have git installed, then
+    - initialize a git repo
+    - switch to a gh-pages branch
+    - commit all changes to the repo.
+> - open index.Rmd for you to edit.
+ 
+
+--- .centrepre &vcenter .bigger
+
+## Setup
+
+<a class='example'>Your Turn</a>
+  
+```
+author("myDeck")
+```
+
+*** =pnotes
+
+<iframe src='assets/img/create_deck.svg' width=960px></iframe>
+
+--- .centrepre #demo1-create
+
+<a class='example'>Your Turn</a>
+
+```{r echo = F, results = 'asis', comment = NA}
+f <- system.file('skeleton', 'index.Rmd', package = 'slidify')
+include(f)
+```
+
+--- .centrepre
+
+## Slidify
+
+<a class='example'>Your Turn</a>
+
+```
+slidify("index.Rmd")
+browseURL("index.html")
+```
+
+
+--- .nobackground .quote
+
+<q> Slidify helps create, __customize__ and share, elegant, dynamic and interactive HTML5 documents using R Markdown.</q>
+
+---
+
+## Customization
+
+Slidify is highly modular and attempts to achieve clean separation of content from view and behavior. There are several ways to customize a document.
+
+> 1. Frameworks
+> 2. Layouts
+> 3. Widgets
+
+<div class='build'>
+<p>We will look at customization in more detail later.</p>
+</div>
+
+--- .nobackground .quote
+
+<q> Slidify helps create, customize and __share__, elegant, dynamic and interactive HTML5 documents using R Markdown.</q>
+
+--- .bigger
+
+## Share
+
+Share your document easily on 
+
+> - [github](http://github.com)
+> - [rpubs](http://rpubs.com) 
+> - [dropbox](http://dropbox.com)
+
+---
+
+## Share on Github
+
+The default option is to publish to github. 
+
+
+```
+publish('myDeck', 'ramnathv')
+```
+
+<br/>
+
+
+In order to use this option, you need to
+
+- Install `git`.
+- Set up a `github` account.
+- Set up SSH access to `github`.
+
+Alternately, you can also use the github GUI client to publish. This [screencast](http://www.youtube.com/watch?v=GmcRWitLI0o) provides details.
+
+---
+
+## Share on Dropbox
+
+You can share your deck using Dropbox, by copying it to your Public folder.
+
+```
+publish('myDeck', host = "dropbox")
+```
+
+You can also drag-and-drop your slide folder to your Public Dropbox folder and get a link to `index.html`. Press `p` to see a screenshot of how to do this.
+
+*** =pnotes
+
+![](http://codingsomething.files.wordpress.com/2013/02/screenshot.png?w=652)
+
+---
+
+## Share on RPubs
+
+[RPubs](http://rpubs.com) is a service provided by [RStudio](http://rstudio.com) to share RMarkdown documents. Here are the steps to share on RPubs.
+
+> 1. Change `mode` to `standalone` in `index.Rmd`.
+> 2. Slidify the deck `slidify('index.Rmd')`.
+> 3. Hit Publish on the RStudio preview window.
+> 4. Follow the instructions from there.
+
+--- .nobackground .quote
+
+<q> Slidify helps create, customize and share, elegant, __dynamic__ and interactive HTML5 documents using R Markdown.</q>
+
+---
+
+## Dynamic
+
+Dynamic content implies that plots, tables and other results in the deck can be dynamically generated using code snippets. Slidify uses the `knitr` package to accomplish this.
+
+<img class='center' src='http://ecx.images-amazon.com/images/I/41kI1dxXGfL.jpg' height=150px width=300px/>
+
+--- &vcenter
+
+```{r echo = F, comment = NA, results = 'asis'}
+include('include/reproducible.txt')
+```
+
+---
+
+```{r child = 'include/reproducible.txt'}
+```
+
+
+--- .nobackground .quote
+
+<q> Slidify helps create, customize and share, elegant, dynamic and __interactive__ HTML5 documents using R Markdown.</q>
+
+---
+
+## Interactive
+
+Slidify uses `widgets` to add interactive content to slides.
+
+--- &vcenter #interactive-quiz
+
+<a class='example'>Your Turn</a>
+
+    ---
+    title: Interactive Quiz
+    widgets: [bootstrap, quiz]
+    --- &radio
+    
+    ## Question 1
+    
+    What is 1 + 1?
+    
+    1. 1 
+    2. _2_
+    3. 3
+    
+    *** .hint
+    
+    This is a hint
+    
+    *** .explanation
+    
+    This is an explanation
+
+--- &radio
+
+## Question 1
+
+What is 1 + 1?
+
+1. 1 
+2. _2_
+3. 3
+
+
+*** .hint
+
+This is a hint
+
+*** .explanation
+
+This is an explanation
+
+--- .bigger
+
+## Interactive Chart
+
+```{r ichart, results = 'hide', tidy = F, message = F}
+require(rCharts)
+haireye = as.data.frame(HairEyeColor)
+n1 <- nPlot(Freq ~ Hair, 
+  group = 'Eye',
+  data = subset(haireye, Sex == 'Male'),
+  type = 'multiBarChart'
+)
+n1$show('inline')
+```
+
+---
+
+## Interactive Chart
+
+```{r ref.label = 'ichart', results = 'asis', echo = F}
+
+```
+
+--- .segue bg:indigo
+
+## How Slidify Works?
+
+---
+
+<iframe src='assets/img/knit.svg' width=800px height=250px>
+</iframe> 
+
+---
+
+<iframe src='assets/img/split_apply_combine.svg' width=800px height=250px>
+</iframe> 
+
+
+---
+
+<iframe src='assets/img/split.svg' width=800px height=250px>
+</iframe> 
+
+---
+
+<iframe src='assets/img/apply.svg' width=800px height=250px>
+</iframe> 
+
+
+---
+
+<iframe src='assets/img/combine.svg' width=800px height=250px>
+</iframe> 
+
+---
+
+## Credits
+
+1. Yihui Xie for knitr.
+2. Joe Cheng for Shiny.
+3. Jeffrey Horner and RStudio for R Markdown.
+4. Hadley Wickham for several R packages.
+5. Kenton Russel and Thomas Reinholdsson for coauthoring rCharts.
+6. Authors of all the JS Libraries I have liberally used.
+7. Authors of several presentation libraries in Ruby/Python/JS.
+
+<!-- rmarkdown v1 -->
+
+
+
+
+
+
+
+
+

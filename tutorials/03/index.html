@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layouts</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Layouts">
+  <meta name="author" content="Ramnath Vaidyanathan">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="../../libraries/frameworks/io2012/css/gh-buttons.css" >
+  <link rel="stylesheet" href="../../libraries/highlighters/highlight.js/css/solarized_light.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="../../libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="./assets/css/app.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="../../libraries/frameworks/io2012/js/slides" 
+    src="../../libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Layouts</h1>
+    <h2>Interactive Docs, UseR 2014</h2>
+    <p>Ramnath Vaidyanathan<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="segue dark nobackground" id="slide-1" style="background:;">
+  <article data-timings="">
+    <p><q>A layout is a mustache template that specifies the markup to render a slide</q></p>
+
+  </article>
+  <!-- Presenter Notes -->
+  <aside class="note" id="">
+    <section>
+      <p>Layouts allow a clean separation of content from design, thereby allowing the same markdown document to be rendered using multiple HTML5 frameworks. The best way to understand layouts is to follow a slide through slidify</p>
+
+    </section>
+  </aside>
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="segue dark" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Journey of a Slide</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <article data-timings="">
+    <iframe src='../01/assets/img/raw_slide.svg' width=800px height=250px>
+</iframe> 
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="centrepre bigger" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Slide</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>--- {class: class1, bg: yellow, id: id1}
+
+## Slide Title
+
+Slide Contents
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="centrepre bigger" id="slide1a" style="background:;">
+  <hgroup>
+    <h2>Slide</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<pre><code>--- {class: class1, bg: yellow, id: id1}
+
+## Slide Title
+
+Slide Contents
+</code></pre>
+
+
+<div id='' class="draggable ui-widget-content ">
+  <div class='callout left'>
+    <p>Properties</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="centrepre bigger" id="slide1b" style="background:;">
+  <hgroup>
+    <h2>Slide</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<pre><code>--- {class: class1, bg: yellow, id: id1}
+
+## Slide Title
+
+Slide Contents
+</code></pre>
+
+
+<div id='' class="draggable ui-widget-content ">
+  <div class='callout left'>
+    <p>Title</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="centrepre bigger" id="slide1c" style="background:;">
+  <hgroup>
+    <h2>Slide</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<pre><code>--- {class: class1, bg: yellow, id: id1}
+
+## Slide Title
+
+Slide Contents
+</code></pre>
+
+
+<div id='' class="draggable ui-widget-content ">
+  <div class='callout left'>
+    <p>Content</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-8" style="background:;">
+  <article data-timings="">
+    <iframe src='../01/assets/img/parse_slide.svg' width=800px height=250px>
+</iframe> 
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="centrepre" id="payload" style="background:;">
+  <hgroup>
+    <h2>Payload</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>$html
+[1] &quot;&lt;h2&gt;Slide Title&lt;/h2&gt;\n\n&lt;p&gt;Slide Contents&lt;/p&gt;\n&quot;
+
+$header
+[1] &quot;&lt;h2&gt;Slide Title&lt;/h2&gt;&quot;
+
+$level
+[1] &quot;2&quot;
+
+$title
+[1] &quot;Slide Title&quot;
+
+$content
+[1] &quot;&lt;p&gt;Slide Contents&lt;/p&gt;\n&quot;
+
+$class
+[1] &quot;class1&quot;
+
+$bg
+[1] &quot;yellow&quot;
+
+$id
+[1] &quot;id1&quot;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-10" style="background:;">
+  <article data-timings="">
+    <iframe src='../01/assets/img/layout_slide.svg' width=800px height=250px>
+</iframe> 
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="RAW bigger centrepre" id="layout" style="background:;">
+  <hgroup>
+    <h2>Layout</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="html">&lt;slide class=&quot;{{ slide.class }}&quot; id=&quot;{{ slide.id }}&quot; 
+    style=&quot;background:{{{ slide.bg }}};&quot;&gt;
+  &lt;hgroup&gt;
+    {{{ slide.header}}}
+  &lt;/hgroup&gt;
+  &lt;article&gt;
+    {{{ slide.content }}}
+  &lt;/article&gt;
+&lt;/slide&gt;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-12" style="background:;">
+  <article data-timings="">
+    <iframe src='../01/assets/img/render_slide.svg' width=800px height=250px>
+</iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="bigger centrepre" id="rendered" style="background:;">
+  <hgroup>
+    <h2>Rendered</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>&lt;slide class=&quot;class1&quot; id=&quot;id1&quot; style=&quot;background:yellow;&quot;&gt;
+  &lt;hgroup&gt;
+    &lt;h2&gt;Slide Title&lt;/h2&gt;
+  &lt;/hgroup&gt;
+  &lt;article&gt;
+    &lt;p&gt;Slide Contents&lt;/p&gt;
+
+  &lt;/article&gt;
+&lt;/slide&gt;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="class1" id="id1" style="background:yellow;">
+  <hgroup>
+    <h2>Slide Title</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Slide Contents</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="segue dark nobackground" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Custom Layouts</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="centrepre carouselslide" id="carouselslide" style="background:;">
+  <hgroup>
+    <h2>Carousel</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code>--- {tpl: carousel, class: span12}
+
+## Carousel
+
+
+*** {class: active, img: &quot;../01/assets/img/split.svg&quot;}
+
+Image 1
+
+*** {img: &quot;../01/assets/img/apply.svg&quot;}
+
+Image 2
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="centrepre carouselslide" id="carouselslideA" style="background:;">
+  <hgroup>
+    <h2>Carousel</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<pre><code class="no-highlight">
+ --- {tpl: carousel, class: span12}
+
+ ## Carousel
+
+
+ *** {class: active, img: &quot;../01/assets/img/split.svg&quot;}
+
+ Image 1
+
+ *** {img: &quot;../01/assets/img/apply.svg&quot;}
+
+ Image 2
+</code></pre>
+
+
+<div id='' class="draggable ui-widget-content ">
+  <div class='callout left'>
+    <p>Properties</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="centrepre carouselslide" id="carouselslideB" style="background:;">
+  <hgroup>
+    <h2>Carousel</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<pre><code class="no-highlight">
+ --- {tpl: carousel, class: span12}
+
+ ## Carousel
+
+
+ *** {class: active, img: &quot;../01/assets/img/split.svg&quot;}
+
+ Image 1
+
+ *** {img: &quot;../01/assets/img/apply.svg&quot;}
+
+ Image 2
+</code></pre>
+
+
+<div id='' class="draggable ui-widget-content ">
+  <div class='callout left'>
+    <p>Title</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="centrepre carouselslide" id="carouselslideC" style="background:;">
+  <hgroup>
+    <h2>Carousel</h2>
+  </hgroup>
+  <article data-timings="">
+    
+<pre><code class="no-highlight">
+ --- {tpl: carousel, class: span12}
+
+ ## Carousel
+
+
+ *** {class: active, img: &quot;../01/assets/img/split.svg&quot;}
+
+ Image 1
+
+ *** {img: &quot;../01/assets/img/apply.svg&quot;}
+
+ Image 2
+</code></pre>
+
+
+<div id='' class="draggable ui-widget-content ">
+  <div class='callout left'>
+    <p>Blocks</p>
+
+  </div>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="RAW smaller" id="slide-20" style="background:;">
+  <article data-timings="">
+    <p><a class='example'>layout</a></p>
+
+<pre><code> ---
+ layout: slide
+ ---
+
+ {{{ slide.content }}}
+ &lt;div id=&quot;{{slide.id}}-carousel&quot; class=&quot;carousel slide {{slide.class}}&quot;&gt;
+   &lt;!-- Indicators --&gt;
+   &lt;ol class=&quot;carousel-indicators&quot;&gt;
+     {{# slide.blocks }}
+     &lt;li data-target=&quot;#{{slide.id}}-carousel&quot; data-slide-to=&quot;{{num}}&quot; class=&quot;{{class}}&quot;&gt;&lt;/li&gt;
+     {{/ slide.blocks }}
+   &lt;/ol&gt;
+   &lt;!-- Wrapper for slides --&gt;
+   &lt;div class=&quot;carousel-inner&quot;&gt;
+     {{# slide.blocks }}
+     &lt;div class=&quot;item {{class}}&quot;&gt;
+       &lt;img src=&quot;{{img}}&quot; alt=&quot;{{alt}}&quot;&gt;
+       &lt;div class=&quot;carousel-caption&quot;&gt;{{{ content }}}&lt;/div&gt;
+     &lt;/div&gt;
+     {{/ slide.blocks }}
+   &lt;/div&gt;
+   &lt;!-- Controls --&gt;
+   &lt;a class=&quot;left carousel-control&quot; href=&quot;#{{slide.id}}-carousel&quot; data-slide=&quot;prev&quot;&gt;&amp;lsaquo;&lt;/a&gt;
+   &lt;a class=&quot;right carousel-control&quot; href=&quot;#{{slide.id}}-carousel&quot; data-slide=&quot;next&quot;&gt;&amp;rsaquo;&lt;/a&gt;
+ &lt;/div&gt;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="span12" id="mycarouselslide" style="background:;">
+  <article data-timings="">
+    
+<p><a class='example'>view</a></p>
+
+<div id="mycarouselslide-carousel" class="carousel slide span12">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#mycarouselslide-carousel" data-slide-to="1" class="active"></li>
+    <li data-target="#mycarouselslide-carousel" data-slide-to="2" class=""></li>
+  </ol>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="../01/assets/img/split.svg" alt="">
+      <div class="carousel-caption"><p>Image 1</p>
+</div>
+    </div>
+    <div class="item ">
+      <img src="../01/assets/img/apply.svg" alt="">
+      <div class="carousel-caption"><p>Image 2</p>
+
+<style>
+#mycarouselslide img {
+  width: 800px;
+  height: 600px;
+}
+</style>
+</div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#mycarouselslide-carousel" data-slide="prev">&lsaquo;</a>
+  <a class="right carousel-control" href="#mycarouselslide-carousel" data-slide="next">&rsaquo;</a>
+</div>
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-22" style="background:lightgoldenrodyellow;">
+  <hgroup>
+    <h2>Create Carousel</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><a class='example'>Your Turn</a></p>
+
+<h3>Basic</h3>
+
+<ol>
+<li>Open the file <code>demo/layouts/carousel/index.Rmd</code>.</li>
+<li>Run <code>slidify(&quot;index.Rmd&quot;)</code>.</li>
+<li>Open <code>index.html</code>.</li>
+</ol>
+
+<h3>Intermediate</h3>
+
+<ol>
+<li>Add a second slide displaying a carousel of 4 images.</li>
+<li>Modify the carousel layout.</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="dark segue nobackground" id="slide-23" style="background:;">
+  <hgroup>
+    <h2>Notes</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-24" style="background:;">
+  <hgroup>
+    <h2>Properties</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Slide properties are key-value pairs that are passed to the layout. You can specify class, id and bg and style the slide, either by using built in classes, or specifying additional css.</p>
+
+<pre><code>--- {class: [class1, class2], id: id}
+</code></pre>
+
+<p>You can also use symbolic css style prefixes for frequently used properties. For instance, a dot indicates class, a hash refers to id and an ampersand identifies a layout.</p>
+
+<pre><code>--- .class1 .class2 #id
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-25" style="background:;">
+  <hgroup>
+    <h2>Properties</h2>
+  </hgroup>
+  <article data-timings="">
+    <table><thead>
+<tr>
+<th><strong>Variable</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>slide.title</code></td>
+<td>The title of the slide with no markup</td>
+</tr>
+<tr>
+<td><code>slide.header</code></td>
+<td>The title of the slide with markup</td>
+</tr>
+<tr>
+<td><code>slide.level</code></td>
+<td>The title header level (h1 - h6)</td>
+</tr>
+<tr>
+<td><code>slide.content</code></td>
+<td>The contents of the slide sans header</td>
+</tr>
+<tr>
+<td><code>slide.html</code></td>
+<td>The contents of the slide with header</td>
+</tr>
+<tr>
+<td><code>slide.num</code></td>
+<td>The number of the slide</td>
+</tr>
+<tr>
+<td><code>slide.id</code></td>
+<td>The id assigned to the slide</td>
+</tr>
+<tr>
+<td><code>slide.class</code></td>
+<td>The class assigned to the slide</td>
+</tr>
+<tr>
+<td><code>slide.bg</code></td>
+<td>The background assigned to the slide</td>
+</tr>
+<tr>
+<td><code>slide.myblock</code></td>
+<td>The slide block named myblock</td>
+</tr>
+<tr>
+<td><code>slide.blocks</code></td>
+<td>The slide blocks which are not named</td>
+</tr>
+<tr>
+<td><code>slide.rendered</code></td>
+<td>The rendered slide</td>
+</tr>
+</tbody></table>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-26" style="background:;">
+  <hgroup>
+    <h2>Blocks</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Blocks are slides nested within a slide, identified by three stars. Just like a slide, they can contain  properties, title and content. </p>
+
+<p>There are two types of blocks - named and unnamed. A block can be named by specifying the property <code>{name: block1}</code> (or using the symbolic shortcut <code>{=block1}</code>). </p>
+
+<p>A block with the name <code>block1</code> can be accessed in a slide layout as <code>slide.block1</code>. The title and content of this block can be accessed as <code>slide.block1.title</code> and <code>slide.block1.content</code>. Unnamed blocks are aggregated into the namespace <code>slide.blocks</code>. </p>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="segue dark nobackground" id="slide-27" style="background:;">
+  <hgroup>
+    <h2>Inheritance</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="centrepre RAW bigger" id="slide-28">
+<hgroup>
+  <h2>Adding a Footer</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<pre><code>&lt;slide class=&quot;{{ slide.class }}&quot;&gt;
+  &lt;hgroup&gt;
+    {{{ slide.header }}}
+  &lt;/hgroup&gt;
+  &lt;article&gt;
+    {{{ slide.content }}}  
+
+
+
+  &lt;/article&gt;
+&lt;/slide&gt;
+</code></pre>
+
+</article>
+<!-- Presenter Notes -->
+<aside class="note">
+  <section>
+    <p>Consider the following layout. Suppose, you want some slides in your deck to display a footer with a logo.</p>
+
+  </section>
+</aside>
+</slide>
+<slide class="centrepre RAW bigger" id="slide-29">
+<hgroup>
+  <h2>Adding a Footer</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<pre><code>&lt;slide class=&quot;{{ slide.class }}&quot;&gt;
+  &lt;hgroup&gt;
+    {{{ slide.header }}}
+  &lt;/hgroup&gt;
+  &lt;article&gt;
+    {{{ slide.content }}}  
+   &lt;footer class = &#39;logo&#39;&gt;
+      &lt;img src = &#39;path/to/logo&#39;&gt;&lt;/img&gt;
+   &lt;/footer&gt;
+  &lt;/article&gt;
+&lt;/slide&gt;
+</code></pre>
+
+</article>
+<!-- Presenter Notes -->
+<aside class="note">
+  <section>
+    <p>One way is to create a new slide layout adding the custom footer after <code>{{{ slide.content }}}</code>, saving it to <code>assets/layouts</code> and using it as a custom layout.</p>
+
+<p>However, this is not efficient for two reasons. </p>
+
+<ul>
+<li>It is not DRY and repeats code unnecessarily. </li>
+<li>When the default slide layout is modified, you need to manually modify the custom layout to ensure that layouts are in sync. This could happen when you decide to use a different HTML5 slide framework, which has a different markup for slides. This is where layout inheritance comes to play.</li>
+</ul>
+
+<p>Note that while defining your custom slide layout, you are essentially replacing the <code>{{{ slide.content }}}</code> placeholder in the slide layout by <code>{{{ slide.content }}}</code> + footer. Slidify provides a mechanism, where layouts can inherit from a parent layout, thereby simplifying the template considerably and keeping thing DRY.</p>
+
+  </section>
+</aside>
+</slide>
+<slide class="centrepre RAW bigger" id="slide-30">
+<hgroup>
+  <h2>Adding a Footer</h2>
+</hgroup>
+<article class = 'flexbox vcenter'>
+<pre><code>---
+layout: slide
+---    
+
+
+    {{{ slide.content }}}  
+   &lt;footer class = &#39;logo&#39;&gt;
+      &lt;img src = &#39;path/to/logo&#39;&gt;&lt;/img&gt;
+   &lt;/footer&gt;
+</code></pre>
+
+</article>
+<!-- Presenter Notes -->
+<aside class="note">
+  <section>
+    <p>This is the modified layout for this use-case using inheritance. The YAML front matter indicates that this template inherits from slide, which is the default slide layout.</p>
+
+  </section>
+</aside>
+</slide>
+<slide class="" id="slide-31" style="background:lightgoldenrodyellow;">
+  <article data-timings="">
+    <p><a class="example">Your Turn</a></p>
+
+<h2>Using Layouts</h2>
+
+<h3>Basic</h3>
+
+<ol>
+<li>Open the file <code>demo/layouts/index.Rmd</code>.</li>
+<li>Modify the <code>logo</code> property to point to a logo of your choice.</li>
+<li>Run <code>slidify(&quot;index.Rmd&quot;)</code>.</li>
+<li>Open <code>index.html</code>.</li>
+</ol>
+
+<h3>Intermediate</h3>
+
+<p>Modify the default slide layout at <code>demo/layouts/assets/layouts/slide.html</code> such that </p>
+
+<ol>
+<li>Every slide has a red line after the title.</li>
+<li></li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="segue dark nobackground" id="slide-32" style="background:;">
+  <hgroup>
+    <h2>Add DeckJS Extension</h2>
+  </hgroup>
+  <article data-timings="">
+    
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-33" style="background:;">
+  <hgroup>
+    <h2>Introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This is a demo in response to the <a href="http://stackoverflow.com/questions/19348763/how-i-can-include-the-use-of-the-extension-deck-automation-js-when-i-create-a-do?utm_source=dlvr.it&amp;utm_medium=twitter">following question on SO</a></p>
+
+<blockquote>
+<p>How I can include the use of the extension deck.automation.js when I create a document Rmarkdown-slidify-deck.js in RStudio? It is to show a presentation on a screen with statistical content without interaction from anyone, and when finished will start automatically.</p>
+</blockquote>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-34" style="background:;">
+  <hgroup>
+    <h2>Step 1: Initialize Deck</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Initialize the slide deck using <code>author(&quot;mydeck&quot;)</code> and modify <code>index.Rmd</code> to</p>
+
+<pre><code class="yaml">---
+title       : Add DeckJS Extension
+author      : Ramnath Vaidyanathan
+framework   : deckjs
+mode        : selfcontained
+---
+
+</code></pre>
+
+<p>Run <code>slidify(&quot;index.Rmd&quot;)</code> to create a basic deck. Setting <code>mode: selfcontained</code> in the YAML front matter will ensure that the <code>libraries</code> folder is copied locally.</p>
+
+<p>We will now download the plugin and incorporate it into libraries. If for some reason, you are unable to download it, you can work with a pre-rendered copy in <code>demos/layouts/deckext</code>.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-35" style="background:;">
+  <hgroup>
+    <h2>Step 2: Download Extension</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Download the extension <a href="http://github.com/rchampourlier/deck.automatic.js">automatic</a> and add it to <a href="http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/extensions">libraries/frameworks/deck/extensions</a>. You can do it manually, or run the following R code from your slide directory.</p>
+
+<pre><code class="r">require(downloader)
+download(
+  &#39;https://github.com/rchampourlier/deck.automatic.js/archive/master.zip&#39;, 
+  &#39;automatic.zip&#39;
+)
+unzip(&#39;automatic.zip&#39;)
+slidify:::copy_dir(
+  &quot;deck.automatic.js-master/automatic&quot;, 
+  &quot;libraries/frameworks/deckjs/extensions/automatic&quot;
+)
+unlink(&quot;automatic.zip&quot;)
+unlink(&quot;deck.automatic.js-master&quot;)
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-36" style="background:;">
+  <hgroup>
+    <h2>Step 3: Modify Config.yml</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Modify <code>config.yml</code> in <a href="http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/config.yml">libraries/frameworks/deckjs/config.yml</a> so that <code>automatic</code> is added to the list of extensions.</p>
+
+<pre><code class="yaml">deckjs:
+  theme: swiss
+  transition: horizontal-slide
+  extensions: [goto, hash, menu, navigation, scale, status, automatic]
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-37" style="background:;">
+  <hgroup>
+    <h2>Step 4: Add Snippet</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Modify <a href="http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/partials/snippet.html">libraries/frameworks/deckjs/partials/snippet.html</a> by replacing the section at the end of <code>snippet.html</code> that initializes the deck, to the following. You can configure the settings for <code>automatic</code> in this snippet.</p>
+
+<pre><code class="html">&lt;!-- Initialize the deck --&gt;
+&lt;script&gt;
+$(function() {
+  // required only if the automatic extension is enabled.
+  $.extend(true, $.deck.defaults, {
+  automatic: {
+    startRunning: true,    // true or false
+    cycle: false,           // true or false
+    slideDuration: 1000 // duration in milliseconds
+  }})
+  $.deck(&#39;.slide&#39;);
+});
+&lt;/script&gt;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="RAW" id="slide-38" style="background:;">
+  <hgroup>
+    <h2>Step 5: Add Play/Pause (Optional)</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>If you wish to add play/pause control as described in the documentation for <a href="http://github.com/rchampourlier/deck.automatic.js">automatic</a>, you will need to modify <a href="http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/layouts/deck.html">libraries/frameworks/deckjs/layouts/deck.html</a>, by replacing the <code>&lt;body&gt;</code> with the following</p>
+
+<pre><code>&lt;!-- Begin slides --&gt;
+
+{{{ page.content }}}
+&lt;div class=&#39;deck-automatic-link&#39; title=&quot;Play/Pause&quot;&gt;Play/Pause&lt;/div&gt;
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="RAW" id="slide-39" style="background:;">
+  <hgroup>
+    <h2>Step 6: Custom Duration</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>If you want to add custom slide durations, you will need to modify <a href="http://github.com/slidify/add-deck-ext/tree/gh-pages/libraries/frameworks/deckjs/layouts/slide.html">libraries/frameworks/deckjs/layouts/slide.html</a> to</p>
+
+<pre><code>&lt;section class=&quot;slide {{ slide.class }}&quot; id=&quot;{{ slide.id }}&quot; data-duration=&quot;{{ slide.duration}}&quot;&gt;
+  {{{ slide.header }}}
+  {{{ slide.content }}}
+&lt;/section&gt;
+</code></pre>
+
+<p>To set the duration, you will need to add the <code>duration</code> property on the same line as the slide separator as <code>YAML</code>.</p>
+
+<pre><code>--- {duration: 5000}
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+<slide class="" id="slide-40" style="background:;">
+  <article data-timings="">
+    <iframe src='../../demos/layouts/deckext/index.html'></iframe>
+
+<!-- rmarkdown v1 -->
+
+  </article>
+  <!-- Presenter Notes -->
+  <div class='edit-button button-group'>
+    <a href="http://prose.io/#ramnathv/user2014-idocs-slides/edit/gh-pages/tutorials/03/index.Rmd" class="button icon edit">Edit</a>
+    <a href='http://ramnathv.github.io/user2014-idocs-slides' class="button icon home" target="_self">Home</a>  
+     <a href='http://github.com/ramnathv/user2014-idocs-slides/issues/new?body=' class="button icon comment" target="_self">Comment</a>  
+  </div>
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title=''>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Journey of a Slide'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title=''>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Slide'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Slide'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Slide'>
+         6
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=7 title='Slide'>
+         7
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=8 title=''>
+         8
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=9 title='Payload'>
+         9
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=10 title=''>
+         10
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=11 title='Layout'>
+         11
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=12 title=''>
+         12
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=13 title='Rendered'>
+         13
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=14 title='Slide Title'>
+         14
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=15 title='Custom Layouts'>
+         15
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=16 title='Carousel'>
+         16
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=17 title='Carousel'>
+         17
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=18 title='Carousel'>
+         18
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=19 title='Carousel'>
+         19
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=20 title=''>
+         20
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=21 title=''>
+         21
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=22 title='Create Carousel'>
+         22
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=23 title='Notes'>
+         23
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=24 title='Properties'>
+         24
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=25 title='Properties'>
+         25
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=26 title='Blocks'>
+         26
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=27 title='Inheritance'>
+         27
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=28 title='Adding a Footer'>
+         28
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=29 title='Adding a Footer'>
+         29
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=30 title='Adding a Footer'>
+         30
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=31 title=''>
+         31
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=32 title='Add DeckJS Extension'>
+         32
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=33 title='Introduction'>
+         33
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=34 title='Step 1: Initialize Deck'>
+         34
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=35 title='Step 2: Download Extension'>
+         35
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=36 title='Step 3: Modify Config.yml'>
+         36
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=37 title='Step 4: Add Snippet'>
+         37
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=38 title='Step 5: Add Play/Pause (Optional)'>
+         38
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=39 title='Step 6: Custom Duration'>
+         39
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=40 title=''>
+         40
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="../../libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="./assets/js/z_app.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="http://bartaz.github.io/sandbox.js/jquery.highlight.js"></script>
+
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="../../libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
