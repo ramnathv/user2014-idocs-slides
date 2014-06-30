@@ -1,6 +1,6 @@
 ## Interactive Documents with R
 
-This repository consists of slides for my tutorial on Interactive Documents with R at UseR2014
+This repository consists of slides for my tutorial on Interactive Documents with R at UseR2014. Please download the repo as a zip file using the links in the sidebar.
 
 ## Installation
 

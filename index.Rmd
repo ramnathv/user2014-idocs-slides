@@ -5,7 +5,7 @@ framework   : minimal
 highlighter : prettify
 hitheme     : twitter-bootstrap
 mode        : selfcontained
-github      : {user: ramnathv, repo: user2014-slides, branch: gh-pages}
+github      : {user: ramnathv, repo: user2014-idocs-slides, branch: gh-pages}
 biglogo     : "slidify_logo_big.png"
 ---
 
