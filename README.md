@@ -2,6 +2,10 @@
 
 This repository consists of slides for my tutorial on Interactive Documents with R at UseR2014.
 
+Here is a picture from the tutorial (thanks to [Jo-fai Chow](https://twitter.com/matlabulous))
+
+![tutorial-pic](https://pbs.twimg.com/media/BraLS2XCAAA2xLK.jpg:large)
+
 ## Installation
 
 Slidify is not on CRAN and needs to be installed from `github` using the `devtools` package.
